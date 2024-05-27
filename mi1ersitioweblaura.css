@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3fffd;
+    color: #3e1f86;
+}
+
+header {
+    background-color: #e0e0e0;
+    color: #556f72;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #fffbc8;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+.nav-link {
+    color: #5c6bc0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c257c2;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-section {
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    position: relative;
+}
+
+.artist-img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    filter: grayscale(50%);
+}
+
+.post-it {
+    background-color: #f3e5f5;
+    border: 2px dashed #c257c2;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.post-it:hover {
+    background-color: #e1bee7;
+}
+
+.additional-info {
+    background-color: #c5cae9;
+    border: 2px dashed #001277;
+}
+
+.post-it.circle {
+    border-radius: 50%;
+}
+
+.post-it:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background-color: #c257b9;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.post-it h2 {
+    font-size: 1.8em;
+    color: #b85cc0;
+    margin: 0 0 10px;
+}
+
+.post-it h3 {
+    font-size: 1.5em;
+    color: #b85cc0;
+    margin: 0 0 10px;
+}
+
+.post-it p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #c5a3ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px
+}
+
+
+footer {
+    background-color: #e1b3ff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
